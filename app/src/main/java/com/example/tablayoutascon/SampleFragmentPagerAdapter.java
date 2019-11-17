@@ -10,8 +10,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
  */
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT = 10;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3","Tab4","Tab5","Tab6","Tab7","Tab8","Tab9","Tab10" };
+    final int PAGE_COUNT = 12;
+    private String tabTitles[] = new String[] { "Google", "Facebook", "Twitter","Baidu","Tutorial points","Yahoo","Denshi Jisho","MindOrks","Tofugu","Python Tutorial","Puni Puni","Android Arsenal"};
 
     public SampleFragmentPagerAdapter(FragmentManager fm){
         super(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);

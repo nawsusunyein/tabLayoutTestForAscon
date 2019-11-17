@@ -12,6 +12,8 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        app:pstsTabTextAllCaps="false"
+        app:pstsTabPaddingLeftRight="10dp"
         />
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
