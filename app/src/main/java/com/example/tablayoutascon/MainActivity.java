@@ -3,13 +3,14 @@ package com.example.tablayoutascon;
 import android.os.Bundle;
 
 import com.astuetz.PagerSlidingTabStrip;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.widget.Toolbar;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    Toolbar toolbarMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager()));
 
+        toolbarMain = (Toolbar) findViewById(R.id.toolbar);
+        toolbarMain.setTitle("Ascon");
+        setSupportActionBar(toolbarMain);
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
         tabsStrip.setViewPager(viewPager);
         tabsStrip.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

@@ -8,12 +8,29 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:pstsTabTextAllCaps="false"
         app:pstsTabPaddingLeftRight="10dp"
+        app:pstsIndicatorColor="@color/colorPrimary"
+        app:pstsTabTextColor="@color/colorPrimary"
+        android:background = "@color/colorAccent"
         />
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
