@@ -1,7 +1,6 @@
 package com.example.tablayoutascon;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                Toast.makeText(MainActivity.this,"Selected page position :" + position,Toast.LENGTH_SHORT).show();
+               // Toast.makeText(MainActivity.this,"Selected page position :" + position,Toast.LENGTH_SHORT).show();
             }
 
             @Override

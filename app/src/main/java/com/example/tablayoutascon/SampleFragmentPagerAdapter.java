@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 12;
-    private String tabTitles[] = new String[] { "Google", "Facebook", "Twitter","Baidu","Tutorial points","Yahoo","Denshi Jisho","MindOrks","Tofugu","Python Tutorial","Puni Puni","Android Arsenal"};
+    private String tabTitles[] = new String[] { "Google", "Facebook", "Twitter","Coursera","Tutorial points","Yahoo","Denshi Jisho","MindOrks","Tofugu","Python Tutorial","Puni Puni","Android Arsenal"};
 
     public SampleFragmentPagerAdapter(FragmentManager fm){
         super(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
@@ -20,7 +20,7 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        return PageFragment.newInstance(position + 1);
+        return PageFragment.newInstance(position);
     }
 
     @Override
